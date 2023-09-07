@@ -1,5 +1,5 @@
 #include <stddef.h>
-#include <stdio.o>
+#include <stdio.h>
 /**
 	* Main - Entry point
 	* Description: This function returns the size of various data types in bytes
