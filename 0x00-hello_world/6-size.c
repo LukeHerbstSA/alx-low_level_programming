@@ -1,7 +1,7 @@
 #include <stddef.h>
 #include <stdio.h>
 /**
-	* Main - Entry point
+	* main - Entry point
 	* Description: This function returns the size of various data types in bytes
 	* Return: Always 0 (Success)
 	*/
