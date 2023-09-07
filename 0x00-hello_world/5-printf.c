@@ -8,7 +8,7 @@ int main(void)
 {
 	char stringex2[] = "with proper grammar, but the outcome is a piece of art,";
 
-	printf(stringex2);
+	printf("%s",stringex2);
 	return (0);
 }
 
