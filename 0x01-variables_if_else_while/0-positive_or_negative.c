@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
 	* main - Entry point
 	* Description: Uses printf to print a char string
