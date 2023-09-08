@@ -10,7 +10,7 @@ int main(void)
 
 	for (chararray = 'a'; chararray <= 'z'; chararray++)
 		putchar(chararray);
-	for (chararray = 'A', chararray <= 'Z', chararray++)
+	for (chararray = 'A'; chararray <= 'Z'; chararray++)
 		putchar(chararray)
 	putchar('\n')
 }
