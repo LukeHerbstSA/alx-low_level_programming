@@ -13,4 +13,5 @@ int main(void)
 	for (chararray = 'A'; chararray <= 'Z'; chararray++)
 		putchar(chararray);
 	putchar('\n');
+	return (0);
 }
