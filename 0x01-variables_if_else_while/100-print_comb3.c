@@ -7,11 +7,17 @@
 int main(void)
 {
 	int num;
+	int subnum;
 
 	for (num = 0; num <= 9; num++)
 		{
-		putchar('0' + num);
-		putchar(', ');
+		for (subnum = num + 1; subnum <= 9; subnum++)
+			{
+			putchar('0' + num);
+			putchar('0' + subnum);
+			putchar(',');
+			putchar(' ');
+			}
 		}
 	putchar('\n');
 	return (0);
