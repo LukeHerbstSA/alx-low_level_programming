@@ -11,19 +11,22 @@ int main(void)
 	int depth2;
 
 	for (num = 0; num <= 9; num++)
-		{
+	{
 		for (depth1 = num + 1; depth1 <= 9; depth1++)
-			{
+		{
 			for (depth2 = depth1 + 1; depth2 <= 9; depth2++)
 			{
 				putchar('0' + num);
 				putchar('0' + depth1);
 				putchar('0' + depth2);
+				if (x < 9)
+				{
 				putchar(',');
-				putchar(' ');
-			}
+				putchar(' ')
+				}
 			}
 		}
+	}
 	putchar('\n');
 	return (0);
 }
