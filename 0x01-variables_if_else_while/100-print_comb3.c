@@ -13,18 +13,14 @@ int main(void)
 	{
 		for (subnum = num + 1; subnum <= 9; subnum++)
 		{
-			if (subnum == num - 1 && num != 0)
-			{
-				putchar(',');
-				putchar(' ');
-			}
 			putchar('0' + num);
 			putchar('0' + subnum);
-			if (subnum < 9)
+			if (subnum < 9 || num !=9)
 			{
 				putchar(',');
 				putchar(' ');
 			}
+
 		}
 	}
 	putchar('\n');
