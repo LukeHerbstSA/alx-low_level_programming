@@ -26,9 +26,11 @@ int main(void)
 					putchar('0' + depth2);
 					putchar('0' + depth3);
 					if (depth1 != 8)
+					{
 						putchar(',');
 						putchar(' ');
-				}
+					}
+			}
 			}
 		}
 	}
