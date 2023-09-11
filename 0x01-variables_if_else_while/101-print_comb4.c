@@ -19,10 +19,10 @@ int main(void)
 				putchar('0' + num);
 				putchar('0' + depth1);
 				putchar('0' + depth2);
-				if (depth2 < 9)
+				if (num != 7)
 				{
-				putchar(',');
-				putchar(' ');
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
