@@ -18,7 +18,7 @@ void print_alphabet(void)
 	* Return: Always 0 (Success)
 	*/
 int main(void)
-	print_alphabet();
+	print_alphabet(void);
 	putchar('\n');
 	return (0);
 }
