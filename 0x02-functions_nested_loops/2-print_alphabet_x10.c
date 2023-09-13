@@ -1,14 +1,18 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
-	* main - Entry point
-	* Description: calls print_alphabet_x10
+	* print_alphabet_x10 - returns the alphabet
+	* Description: uses a loop to print the alphabet 10 times
 	* Return: Always 0 (Success)
 	*/
-int main(void)
+void print_alphabet_x10(void)
 {
-	print_alphabet_x10();
-	putchar('\n');
-	return (0);
+	int rows;
+	int i;
+
+	for (rows = 0; rows <= 10; rows++)
+        {
+		for (i = 'a'; i <= 'z'; i++)
+			putchar(i);
+	}
 }

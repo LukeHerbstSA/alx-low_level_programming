@@ -1,13 +1,12 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
-	* main - Entry point
-	* Description: calls a function
-	* Return: Always 0 (Success)
+	* add - int function
+	* Description: adds two numbers
+	* Parameter: int, int
+	* return (0)
 	*/
-int main(void)
+int add(int a, int b)
 {
-	int add(int, int);
-	putchar('\n');
-	return (0);
+	return (a + b);
 }

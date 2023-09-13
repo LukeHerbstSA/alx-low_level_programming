@@ -1,13 +1,31 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
-	* main - Entry point
-	* Description: this program prints natural numbers from n to 98
-	* Return: Always 0 (Success)
+	* print_to_98 - this function uses the appropriate loop for the number n
+	* Description: N/A
+	* Parameter: c
+	* Return: void
 	*/
-int main(void)
+void print_to_98(int n)
 {
-	print_to_98(n);
-	putchar('\n');
-	return (0);
+	if (n > 98)
+	{
+		while (n > 98)
+		{
+			printf("%d", n);
+			printf(", ");
+			n -= 1;
+		}	
+	}
+	if (n < 98)
+	{
+		while (n < 98)
+		{
+			printf("%d", n);
+			printf(", ");
+			n += 1;
+		}
+	}
+	printf("98");
+	putchar('\n')
 }

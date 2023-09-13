@@ -1,13 +1,26 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
-	* main - Entry point
-	* Description: Includes main.h functions to find integer sign
-	* Return: Always 0 (Success)
+	* print_sign(int c)
+	* Description: This program returns various things based on the sign of int c
+	* Parameter: c, an int
+	* Return: 0, 1, -1
 	*/
-int main(void)
+int print_sign(int c)
 {
-	print_sign(int c);
-	putchar('\n');
-	return (0);
+	if (c > 0)
+	{
+		putchar('+');
+		return (1);
+	}
+	else if (c < 0)
+	{
+		putchar('-');
+		return (-1);
+	}
+	else
+	{
+		putchar('0');
+		return(0);
+	}
 }

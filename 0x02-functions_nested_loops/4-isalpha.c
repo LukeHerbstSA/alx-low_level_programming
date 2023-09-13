@@ -1,13 +1,16 @@
-#include <stdio.h>
 #include "main.h"
 /**
-	* main - Entry point
-	* Description: program checks if c fits within upper or lower range
+	* isalpha - prototype function checker
+	* Description: this part of the program evaluates the conditions
+	* Parameter: c - is the number
 	* Return: Always 0 (Success)
 	*/
-int main(void)
+int isalpha(int c)
 {
-	int _isalpha(int c);
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
 	putchar('\n');
 	return (0);
 }
