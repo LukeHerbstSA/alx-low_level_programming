@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "main.h"
-#include "print_alphabet.h"
+#ifndef MAIN_H
+#define MAIN_H
 /**
 	* print_alphabet - void function
 	* Description: prints the alphabet
@@ -20,6 +21,7 @@ void print_alphabet(void)
 	*/
 int main(void)
 {
+	print_alphabet();
 	putchar('\n');
 	return (0);
 }
