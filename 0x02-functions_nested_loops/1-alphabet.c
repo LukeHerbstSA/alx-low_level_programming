@@ -1,14 +1,13 @@
 #include <stdio.h>
-#include "main.h"
 #ifndef MAIN_H
 #define MAIN_H
+#define PRINT_ALPHABET_H
 #endif
 /**
 	* print_alphabet - void function
 	* Description: prints the alphabet
 	* Return: Always 0 (Success)
 	*/
-void print_alphabet(void);
 void print_alphabet(void)
 {
 	int i;
