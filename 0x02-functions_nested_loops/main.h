@@ -89,8 +89,9 @@ int print_sign(int c)
 	* Parameter: int, int
 	* return (0)
 	*/
-int add(int, int)
+int add(int a, int b)
 {
+	res = a + b;
 	
 }
 
@@ -102,7 +103,7 @@ int add(int, int)
         */
 void print_to_98(int n)
 {
-        if (n > 98);
+        if (n > 98)
         {
                 while (n > 98)
 		{
@@ -111,7 +112,7 @@ void print_to_98(int n)
 			n -= 1;
 		}
         }
-        else if (n < 98);
+        else if (n < 98)
         {
                 while (n < 98)
                 {
