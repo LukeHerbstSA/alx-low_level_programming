@@ -11,7 +11,6 @@ void print_alphabet(void)
 
 	for (i = 'a'; i < 'z'; i++)
 		putchar(i);
-	return (0);
 }
 /**
 	* main - Entry point
