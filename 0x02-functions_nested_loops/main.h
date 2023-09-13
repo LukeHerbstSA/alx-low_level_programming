@@ -20,9 +20,11 @@ void print_alphabet(void)
 	*/
 void print_alphabet_x10(void)
 {
-	for (int rows = 0; rows <= 10; rows++)
+	int rows;
+	int i;
+	for (rows = 0; rows <= 10; rows++)
 	{
-		for (int i = 'a'; i <= 'z'; i++)
+		for (i = 'a'; i <= 'z'; i++)
 			putchar(i);
         }
 }
@@ -49,7 +51,7 @@ int islower(int c)
 	*/
 int isalpha(int c)
 {
-	if (c >= 97 && c <= 122 || c >= 65 && c <=90)
+	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
 		return (1);
 	else
 		return (0);
@@ -87,7 +89,7 @@ int print_sign(int c)
 	* Parameter: int, int
 	* return (0)
 	*/
-int add(int, int);
+int add(int, int)
 {
 	
 }
@@ -103,9 +105,11 @@ void print_to_98(int n)
         if (n > 98);
         {
                 while (n > 98)
+		{
                         printf("%d", n);
                         printf(", ");
 			n -= 1;
+		}
         }
         else if (n < 98);
         {
