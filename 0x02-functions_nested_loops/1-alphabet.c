@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void print_alphabet(void);
+void print_alphabet();
 
 /**
 	* main - Entry point
@@ -9,7 +9,7 @@ void print_alphabet(void);
 	*/
 int main(void)
 {
-	print_alphabet(void);
+	print_alphabet();
 	putchar('\n');
 	return (0);
 }
