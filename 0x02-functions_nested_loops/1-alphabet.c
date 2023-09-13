@@ -1,12 +1,20 @@
 #include <stdio.h>
-#ifndef MAIN_H
-#define MAIN_H
-#define PRINT_ALPHABET_H
-#endif
+/**
+	* main - Entry point
+	* Description: calls a function
+	* Retrun: Always 0 (Success)
+	*/
+void print_alphabet(void);
+int main(void)
+{
+	print_alphabet();
+	putchar('\n');
+	return (0);
+}
 /**
 	* print_alphabet - void function
 	* Description: prints the alphabet
-	* Return: Always 0 (Success)
+	* Return: void
 	*/
 void print_alphabet(void)
 {
@@ -14,15 +22,4 @@ void print_alphabet(void)
 
 	for (i = 'a'; i < 'z'; i++)
 		putchar(i);
-}
-/**
-	* main - Entry point
-	* Description: serves as the start of the program and calls a function
-	* Return: Always 0 (Success)
-	*/
-int main(void)
-{
-	print_alphabet();
-	putchar('\n');
-	return (0);
 }
