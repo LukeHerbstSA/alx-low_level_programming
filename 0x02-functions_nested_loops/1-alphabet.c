@@ -2,7 +2,7 @@
 /**
 	* main - Entry point
 	* Description: calls a function
-	* Retrun: Always 0 (Success)
+	* Return: Always 0 (Success)
 	*/
 void print_alphabet(void);
 int main(void)
