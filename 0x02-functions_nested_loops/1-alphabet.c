@@ -1,4 +1,16 @@
 #include <stdio.h>
+#ifndef "print_alphabet.h"
+#define "print_alphabet.h"
+void print_alphabet(void)
+{
+        int i;
+
+        for (i = 'a'; i < 'z'; i++)
+                putchar(i);
+        return;
+}
+
+#endif
 /**
 	* main - Entry point
 	* Description: calls a function
