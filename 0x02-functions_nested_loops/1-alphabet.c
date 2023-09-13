@@ -2,6 +2,7 @@
 #include "main.h"
 #ifndef MAIN_H
 #define MAIN_H
+#endif
 /**
 	* print_alphabet - void function
 	* Description: prints the alphabet
