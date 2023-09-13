@@ -1,4 +1,3 @@
-#include <stdio.h>
 #ifndef FUNCTIONS_HEADER_H
 #define FUNCTIONS_HEADER_H
 /**
