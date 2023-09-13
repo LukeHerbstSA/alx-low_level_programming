@@ -91,8 +91,9 @@ int print_sign(int c)
 	*/
 int add(int a, int b)
 {
+	int res;
 	res = a + b;
-	
+	return res;
 }
 
 /**
@@ -112,7 +113,7 @@ void print_to_98(int n)
 			n -= 1;
 		}
         }
-        else if (n < 98)
+        if (n < 98)
         {
                 while (n < 98)
                 {
@@ -121,8 +122,6 @@ void print_to_98(int n)
 			n += 1;
                 }
         }
-	else
-		continue;
         printf("98");
 }
 #endif 
