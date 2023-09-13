@@ -1,6 +1,4 @@
 #include <stdio.h>
-#ifndef PRINT_ALPHABET.H
-
 /**
 	* main - Entry point
 	* Description: calls a function
@@ -9,7 +7,7 @@
 void print_alphabet(void);
 int main(void)
 {
-	void print_alphabet();
+	print_alphabet();
 	putchar('\n');
 	return (0);
 }
@@ -24,4 +22,5 @@ void print_alphabet(void)
 
 	for (i = 'a'; i < 'z'; i++)
 		putchar(i);
+	return;
 }
