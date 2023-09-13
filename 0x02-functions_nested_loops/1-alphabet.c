@@ -1,4 +1,6 @@
 #include <stdio.h>
+#ifndef PRINT_ALPHABET.H
+
 /**
 	* main - Entry point
 	* Description: calls a function
@@ -7,7 +9,7 @@
 void print_alphabet(void);
 int main(void)
 {
-	print_alphabet();
+	void print_alphabet();
 	putchar('\n');
 	return (0);
 }
