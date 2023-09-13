@@ -1,22 +1,12 @@
 #include <stdio.h>
-#ifndef "print_alphabet.h"
-#define "print_alphabet.h"
-void print_alphabet(void)
-{
-        int i;
 
-        for (i = 'a'; i < 'z'; i++)
-                putchar(i);
-        return;
-}
+void print_alphabet(void);
 
-#endif
 /**
 	* main - Entry point
 	* Description: calls a function
 	* Return: Always 0 (Success)
 	*/
-void print_alphabet(void);
 int main(void)
 {
 	print_alphabet();
@@ -34,5 +24,4 @@ void print_alphabet(void)
 
 	for (i = 'a'; i < 'z'; i++)
 		putchar(i);
-	return;
 }
