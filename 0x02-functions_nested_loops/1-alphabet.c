@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include "print_alphabet.h"
 /**
 	* main - Entry point
 	* Description: calls print_alphabet
@@ -15,12 +16,12 @@ int main(void)
 /**
 	* print_alphabet - void function
 	* Description: prints the alphabet
-	* Return: Always 0 (Success) 
+	* Return: Always 0 (Success)
 	*/
 void print_alphabet(void)
 {
-        int i;
+	int i;
 
-        for (i = 'a'; i < 'z'; i++)
-                putchar(i);
+	for (i = 'a'; i < 'z'; i++)
+		putchar(i);
 }
