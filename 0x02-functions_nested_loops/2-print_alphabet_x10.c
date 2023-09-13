@@ -10,7 +10,7 @@ void print_alphabet_x10(void)
 	int rows;
 	int i;
 
-	for (rows = 0; rows <= 10; rows++)
+	for (rows = 0; rows < 10; rows++)
         {
 		for (i = 'a'; i <= 'z'; i++)
 			putchar(i);
