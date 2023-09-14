@@ -2,7 +2,6 @@
 
 /**
 	* _isupper - int function
-	* Description: checks if an int is uppercase
 	* @c: int type
 	* Return: 1 if true, 0 if not
 	*/
