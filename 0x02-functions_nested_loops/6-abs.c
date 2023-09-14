@@ -1,10 +1,15 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
-	* main - Entry point
-	* Description: 
-	* Return: Always 0 (Success)
+	* _abs - int function
+	* Description: Calculates the absolute value of a number
+	* @x: passed int to be have its abs value printed
+	* Return: Always x (Success)
 	*/
-int main(void)
+int _abs(int x)
 {
+	if (x < 0)
+		x = x * -1;
+	return (x);
+	putchar('\n');
 }

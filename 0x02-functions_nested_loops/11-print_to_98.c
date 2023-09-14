@@ -3,7 +3,7 @@
 /**
 	* print_to_98 - this function uses the appropriate loop for the number n
 	* Description: N/A
-	* Parameter: c
+	* @n: the passed number to be inputted
 	* Return: void
 	*/
 void print_to_98(int n)
@@ -15,7 +15,7 @@ void print_to_98(int n)
 			printf("%d", n);
 			printf(", ");
 			n -= 1;
-		}	
+		}
 	}
 	if (n < 98)
 	{
@@ -27,5 +27,5 @@ void print_to_98(int n)
 		}
 	}
 	printf("98");
-	putchar('\n')
+	putchar('\n');
 }

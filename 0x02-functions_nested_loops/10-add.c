@@ -3,8 +3,9 @@
 /**
 	* add - int function
 	* Description: adds two numbers
-	* Parameter: int, int
-	* return (0)
+	* @a: first int
+	* @b: second int
+	* Return: the sum of the the two parameters a and b
 	*/
 int add(int a, int b)
 {

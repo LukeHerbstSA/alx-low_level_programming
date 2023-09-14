@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-	* print_sign(int c)
+	* print_sign - int return type
 	* Description: This program returns various things based on the sign of int c
-	* Parameter: c, an int
-	* Return: 0, 1, -1
+	* @c: the passed int that will have its sign evaluated
+	* Return: dependant on sign
 	*/
 int print_sign(int c)
 {
@@ -21,6 +21,6 @@ int print_sign(int c)
 	else
 	{
 		putchar('0');
-		return(0);
+		return (0);
 	}
 }

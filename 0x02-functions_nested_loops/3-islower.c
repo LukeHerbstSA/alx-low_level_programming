@@ -1,16 +1,17 @@
 #include "main.h"
 
 /**
-	* int_islower(int c) - this will check if c is within the lowercase range
-	* Parameter - c
+	* _islower - this will check if c is within the lowercase range
+	* Description: will return 1 if c is evaluated as a lowercase character
+	* @c: passed int to be evaluated
 	* Return: Always 0 (Success)
 	*/
-int islower(int c)
+int _islower(int c)
 {
-	if (c >= 97 && c <= 122)
+	if (c >= 'a' && c <= 'z')
 		return (1);
 	else
 		return (0);
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
