@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-	* isalpha - prototype function checker
+	* _isalpha - prototype function checker
 	* Description: this part of the program evaluates the conditions
 	* @c: an int
 	* Return: 1 on success 0 on failure
 	*/
-int isalpha(int c)
+int _isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
