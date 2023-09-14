@@ -5,7 +5,7 @@
 	* Description: This function will print a line
 	* @n: int type
 	*/
-void print_line(int n);
+void print_line(int n)
 {
 	int i;
 
