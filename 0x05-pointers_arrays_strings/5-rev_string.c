@@ -13,7 +13,7 @@ void rev_string(char *s)
 	char nrml;
 
 	j = -1;
-	length = strlen(s)
+	length = strlen(s);
 	if (length % 2 != 0)
 		length = strlen(s) - 1;
 	for (i = 0; i < length / 2; i++)
