@@ -1,11 +1,11 @@
-#include "main.h'
+#include "main.h"
 
 /**
 	* rev_string - void function
 	* Description: reverses a string
 	* @s: passed pointer to array
 	*/
-void rev_string(char *s);
+void rev_string(char *s)
 {
 	int i;
 	float length;
