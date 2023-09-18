@@ -5,7 +5,7 @@
 	* Description: takes a string array
 	* @s: pointer to string array
 	*/
-void print_rev(char *s);
+void print_rev(char *s)
 {
 	int i;
 	length = strlen(*s);

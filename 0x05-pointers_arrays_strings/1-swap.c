@@ -2,11 +2,11 @@
 
 /**
 	* swap_int - takes 2 pointers
-	* Description: 
+	* Description: swaps the values of two inputted integers
 	* @a: int pointer
 	* @b: int pointer
 	*/
-void swap_int(int *a, int *b);
+void swap_int(int *a, int *b)
 {
 	num1 = *a;
 	num2 = *b;

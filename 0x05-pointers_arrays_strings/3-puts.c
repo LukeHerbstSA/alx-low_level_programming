@@ -5,7 +5,7 @@
 	* Description: This function prints a string by accessing an array
 	* @str: pointer to string
 	*/
-void _puts(char *str);
+void _puts(char *str)
 {
 	int i;
 	length = strlen(*str);
