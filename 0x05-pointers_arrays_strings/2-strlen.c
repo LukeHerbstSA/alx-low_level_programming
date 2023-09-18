@@ -9,8 +9,9 @@
 int _strlen(char *s)
 {
 	int length;
-	array = *s;
+	char array[];
 
+	array = *s;
 	length = strlen(array);
 	return (length);
 }
