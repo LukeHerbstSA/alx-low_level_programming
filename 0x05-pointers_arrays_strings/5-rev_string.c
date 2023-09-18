@@ -11,18 +11,17 @@ void rev_string(char *s)
 	int j;
 	int length;
 	char nrml;
-	char revrs;
 
 	j = -1;
-	length = strlen(s)/2;
-	for (i = 0; i < length; i++)
+	if (length % 2 != 0)
+		length = strlen(s) - 1;
+	else
+		length = strlen(s);
+	for (i = 0; i < length / 2; i++)
 	{
 		nrml = s[i];
-		revrs = s[j];
-
-		s[i] = revrs;
+		s[i] = s[j];
 		s[j] = nrml;
-		j = j - 1;
+		j--;
 	}
-	putchar('\n');
 }
