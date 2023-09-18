@@ -8,6 +8,8 @@
 void _puts(char *str)
 {
 	int i;
+	int length;
+
 	length = strlen(*str);
 
 	for (i = 0; i < length - 1; i++)
