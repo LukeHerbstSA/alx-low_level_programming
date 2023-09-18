@@ -5,6 +5,7 @@
 	* Description: Copies the array at src to dest
 	* @dest: char
 	* @src: char
+	* Return: the first passed array (dest)
 	*/
 char *_strcpy(char *dest, char *src)
 {
