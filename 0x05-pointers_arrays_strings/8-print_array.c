@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
-	*
-	*
-	*
+	* print_array - void function
+	* Description: returns n number of elements from array
+	* @a: int array
+	* @n: int
 	*/
 void print_array(int *a, int n)
 {
