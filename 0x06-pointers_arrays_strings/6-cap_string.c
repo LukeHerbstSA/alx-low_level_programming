@@ -13,10 +13,11 @@ char *cap_string(char *ex)
 	int len;
 
 	len = 0;
+	i = 1;
 	while (ex[len] != '\0')
 		len++;
 	for (j = 0; j < len; j++)
 	{
-		if (j == 0 || )
+		
 	}
 }
