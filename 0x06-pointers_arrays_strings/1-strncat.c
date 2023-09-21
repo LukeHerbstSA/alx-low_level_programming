@@ -2,7 +2,7 @@
 
 /**
 	* _strncat - return char
-	* Description: return pointer to resulting concatenation to dest, with n bytes being concat
+	* Description: return pointer to dest
 	* @dest: array to be concatenated to
 	* @src: source array
 	* @n: int bytes to take from src
@@ -16,9 +16,10 @@ char *_strncat(char *dest, char *src, int n)
 	i = 0;
 	while (dest[i] != '\0')
 		i++;
-	for (j = 0; src[j] != '\0' && j < n; j++)
+	for (j = 0; j < n &&  src[j] != '\0'; j++)
 	{
 		dest[i] = src[j];
+		i++;
 	}
-	return(dest);
+	return (dest);
 }
