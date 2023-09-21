@@ -10,9 +10,10 @@ char *cap_string(char *ex)
 {
 	int i;
 	int j;
-	char regex[] = ",;.!?(){}\" "\t\n;
-	int start = 0;
+	char regex[] = ",;.!?(){}\" \t\n";
+	int start;
 
+	start = 0;
 	for (i = 0; ex[i] != '\0'; i++)
 	{
 		for (j = 0; regex[j] != '\0'; j++)
