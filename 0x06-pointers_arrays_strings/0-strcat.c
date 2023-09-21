@@ -2,8 +2,8 @@
 
 /**
 	* _strcat - returns char pointer
-	* Description: concats 2nd arg to first arg and returns pointer to the result
-	* @dest: array to be copied to 
+	* Description: concats 2nd arg to 1st arg
+	* @dest: array to be copied to
 	* @src: array to be copied
 	* Return: pointer to dest
 	*/
@@ -21,5 +21,5 @@ char *_strcat(char *dest, char *src)
 		i++;
 	}
 	dest[i] = '\0';
-	return(dest);
+	return (dest);
 }
