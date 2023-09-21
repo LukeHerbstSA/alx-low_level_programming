@@ -1,4 +1,4 @@
-#include "MAIN_H"
+#include "main.h"
 
 /**
 	* leet - char function
