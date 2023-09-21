@@ -10,14 +10,18 @@ char *cap_string(char *ex)
 {
 	int i;
 	int j;
-	int len;
+	char regex[] = ",;.!?(){}\" "\t\n;
+	int start = 0;
 
-	len = 0;
-	i = 1;
-	while (ex[len] != '\0')
-		len++;
-	for (j = 0; j < len; j++)
+	for (i = 0; ex[i] != '\0'; i++)
 	{
-		
+		for (j = 0; regex[j] != '\0'; j++)
+		{
+			if (regex[j] == ex[i])
+				start = 1;
+		}
+		if ((ex[i] >= '97' && ex[i] <= '122') && start == 1)
+			ex[i] = ex[i] - 32;
 	}
+	return (ex);
 }
