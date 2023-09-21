@@ -9,6 +9,12 @@
 char *rot13(char *ex)
 {
 	int i;
+	char upp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char low[] = "abcdef
 
-	for (i = 0; e)
+	for (i = 0; ex[i] != '\0'; i++)
+	{
+		if (char)
+			char[i] = char[i] + 13
+	}
 }
