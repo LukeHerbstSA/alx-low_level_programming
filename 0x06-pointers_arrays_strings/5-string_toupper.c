@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-	* string_toupper - 
+	* string_toupper - char function
 	* Description: turns a passed string into uppercase
 	* @ex: char array
 	* Return: returns the character
