@@ -21,6 +21,5 @@ char *rot13(char *ex)
 				ex[i] = o[j];
 		}
 	}
-
 	return (ex);
 }
