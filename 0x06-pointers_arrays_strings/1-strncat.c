@@ -6,7 +6,7 @@
 	* @dest: array to be concatenated to
 	* @src: source array
 	* @n: int bytes to take from src
-	@ Return: pointer to dest
+	* Return: pointer to dest
 	*/
 char *_strncat(char *dest, char *src, int n)
 {
