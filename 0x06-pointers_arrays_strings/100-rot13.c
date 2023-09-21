@@ -10,15 +10,15 @@ char *rot13(char *ex)
 {
 	int i;
 	int j;
-	char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char e[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char o[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (i = 0; ex[i] != '\0'; i++)
 	{
-		for (j = 0; input[j] != '\0'; j++)
+		for (j = 0; e[j] != '\0'; j++)
 		{
-			if (ex[i] == input[j])
-				ex[i] = output[i];
+			if (ex[i] == e[j])
+				ex[i] = o[j];
 		}
 	}
 	return (ex);
