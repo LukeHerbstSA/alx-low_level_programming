@@ -3,8 +3,8 @@
 /**
 	* reverse_array - void function
 	* Description: reverses assed array
-	* @a:
-	* @n:
+	* @a: in array
+	* @n: number of int to be reversed
 	*/
 void reverse_array(int *a, int n)
 {
@@ -13,7 +13,7 @@ void reverse_array(int *a, int n)
 
 	if (n % 2 != 0)
 	{
-		n = (n - 1)/2;
+		n = (n - 1) / 2;
 		for (i = 0; i < n; i++)
 		{
 			tmp = a[i];
@@ -26,8 +26,8 @@ void reverse_array(int *a, int n)
 		for (i = 0; i < (n / 2); i++)
 		{
 			tmp = a[i];
-                        a[i] = a[(n * 2) - i - 1];
-                        a[(n * 2) - 1 - i] = tmp;
+			a[i] = a[(n * 2) - i - 1];
+			a[(n * 2) - 1 - i] = tmp;
 		}
 	}
 }
