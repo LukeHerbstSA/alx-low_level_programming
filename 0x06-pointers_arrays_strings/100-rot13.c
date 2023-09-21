@@ -1,4 +1,4 @@
-#include "MAIN_H"
+#include "main.h"
 
 /**
 	* rot13 - char function
@@ -9,12 +9,17 @@
 char *rot13(char *ex)
 {
 	int i;
-	char upp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char low[] = "abcdef
+	int j;
+	char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (i = 0; ex[i] != '\0'; i++)
 	{
-		if (char)
-			char[i] = char[i] + 13
+		for (j = 0; input[j] != '\0'; j++)
+		{
+			if (ex[i] == input[j])
+				ex[i] = output[i];
+		}
 	}
+	return (ex);
 }
