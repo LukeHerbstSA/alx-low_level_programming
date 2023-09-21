@@ -21,7 +21,7 @@ char *cap_string(char *ex)
 			if (regex[j] == ex[i])
 				start = 1;
 		}
-		if (ex[i] >= '97' && ex[i] <= '122')
+		if (ex[i] >= 97 && ex[i] <= 122)
 		{
 			if (start == 1)
 				ex[i] = ex[i] - 32;
