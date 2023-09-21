@@ -2,7 +2,7 @@
 
 /**
 	* _strncat - return char
-	* Description: return pointer to resulting concatenation to dest, with n bytes being concat'
+	* Description: return pointer to resulting concatenation to dest, with n bytes being concat
 	* @dest: array to be concatenated to
 	* @src: source array
 	* @n: int bytes to take from src
