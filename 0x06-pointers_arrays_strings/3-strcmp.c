@@ -5,7 +5,7 @@
 	* Description: compares two strings
 	* @s1: string 1
 	* @s2: string 2
-	* Return: strings are = 0 smaller <0/greater >0
+	* Return: ascii of s1 - ascii of s2
 	*/
 int _strcmp(char *s1, char *s2)
 {
@@ -15,6 +15,5 @@ int _strcmp(char *s1, char *s2)
 	i = 0;
 	while (s1[i] == s2[i])
 		i++;
-	val = s1[i] - s2[i];
-	return (val);
+	return ((s1[i] - s2[i]));
 }
