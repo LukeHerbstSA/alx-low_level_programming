@@ -13,11 +13,12 @@ char *cap_string(char *ex)
 	int j;
 	int start;
 
-	for (i = 0; start = 0; ex[i] != '0\'; i++)
+	start = 0;
+	for (i = 0; ex[i] != '0\'; i++)
 	{
 		if (start == 1)
 		{
-			if (ex[i] >= 97 && ex[i] <= 122)
+			if ((ex[i] >= 97) && (ex[i] <= 122))
 			{
 				ex[i] = ex[i] - 32;
 				start = 0;
