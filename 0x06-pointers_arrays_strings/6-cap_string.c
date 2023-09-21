@@ -25,6 +25,7 @@ char *cap_string(char *ex)
 		{
 			if (start == 1)
 				ex[i] = ex[i] - 32;
+				start = 0;
 		}
 	}
 	return (ex);
