@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-	* _strncpy - return pointer to result dest array (will be same as src)
-	* Description: Copy function emulating the result of std func strcpy
+	* _strncpy - return pointer to result dest array
+	* Description: Copy function emulating the std strncpy
 	* @dest: returned array
 	* @src: char source array
 	* @n: int number of bytes to be collected from src
