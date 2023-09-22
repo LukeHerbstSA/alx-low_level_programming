@@ -1,12 +1,12 @@
-char *_memcpy(char *dest, char *src, unsigned int n)#include "main.h"
+#include "main.h"
 
 /**
 	* _memcpy - char function
 	* Description: copies src area and overwrites
-	* @dest:
-	* @src:
-	* @n:
-	* Return: 
+	* @dest: array to be overwritten
+	* @src: sample array
+	* @n: number of elements to take
+	* Return: updated array dest
 	*/
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
