@@ -13,7 +13,7 @@ int is_palindrome(char *s)
 	len = _len(s);
 	if (len == 0 || len == 1)
 		return (1);
-	return (checker(s, len - 1));
+	return (checker(s, len));
 }
 
 /**
@@ -39,7 +39,7 @@ int _len(char *s)
 	*/
 int checker(char *s, int len)
 {
-	if (*s == *(s + len))
+	if (*s == *(s + len - 1))
 	{
 		if (len == 0)
 			return (1);
