@@ -7,10 +7,26 @@
 	*/
 void _print_rev_recursion(char *s)
 {
-	if (*s != '\0')
+	int endex;
+
+	endex = _rev_len(char *s) - 1;
+	_rev_printer(*s, endex);
+}
+
+int _rev_len(char *s)
+{
+	if (*s == '\0')
+		return (0);
+	return (1 + _rev_len(*s));
+}
+
+void _rev_printer(char *s, int endex)
+{
+	if (endex == -1)
+		return;
+	else
 	{
-		s++;
-		_print_rev_recursion(s);
+		putchar(s[endex]);
+		_rev_printer(char *s, endex - 1);
 	}
-	putchar (*s);
 }
