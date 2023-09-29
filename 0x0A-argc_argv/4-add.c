@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		{
 			for (j = 0; argv[i][j] != '\0'; j++)
 			{
-				if (isdigit(argv[i][j]) == 0)
+				if (argv[i][j] < '0' || argv[i][j] > '9')
 					break;
 			}
 			if (argv[i][j] == '\0')
@@ -33,7 +33,9 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
+		printf("%d\n", res);
 	}
 	else
 		printf("0\n");
+	return (0);
 }
