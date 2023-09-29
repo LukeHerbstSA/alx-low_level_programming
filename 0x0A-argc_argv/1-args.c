@@ -3,7 +3,7 @@
 /**
 	* main - int function
 	* Description: prints the num of elements in argv
-	* argc: num of elements in argv
+	* @argc: num of elements in argv
 	* @argv: passed array of program args
 	* Return: Always 0 (Success)
 	*/
