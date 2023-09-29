@@ -5,8 +5,7 @@
 	* Description: prints its own file name
 	* @argv: pointer to array of arguments passed to prog
 	*/
-void _my_name(int argc, char *argv[])
+void _my_name(int __attribute__((__unused__)) argc, char *argv[])
 {
-	printf("%s", argv[0]);
-	putchar('\n');
+	printf("%s\n", argv[0]);
 }
