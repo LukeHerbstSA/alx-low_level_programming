@@ -39,7 +39,10 @@ int main(int argc, char *argv[])
 void counter(int cents, int coins)
 {
 	if (cents <= 0)
+	{
 		printf("0\n");
+		return;
+	}
 	if (cents > 0)
 	{
 		while (cents >= 25)
@@ -67,6 +70,6 @@ void counter(int cents, int coins)
 			cents = cents - 1;
 			coins++;
 		}
-		printf("%d", coins);
 	}
+	printf("%d", coins);
 }
