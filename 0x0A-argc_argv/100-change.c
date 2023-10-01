@@ -12,17 +12,14 @@
 	*/
 int main(int argc, char *argv[])
 {
-	int i;
-	int j;
 	int cents;
+	int coins;
 
+	coins = 0;
 	if (argc == 2)
 	{
 		cents = atoi(argv[1]);
-		if (cents > 0)
-			printf("%d", counter(cents));
-		else
-			printf("0\n");
+		counter(cents, coins);
 	}
 	else
 	{
@@ -34,39 +31,42 @@ int main(int argc, char *argv[])
 
 /**
 	* counter - int function
-	* Description: matches a passed cash amount with cents
-	* @cents: passed cash amount (in cents)
-	* Return: Number of coins (int coins)
+	* Description: returns num of coins to match cents
+	* @cents: amount to be paid back
+	* @coins: amount of coins to reach cents
+	* Return: void
 	*/
-int counter(int cents)
+void counter(int cents, int coins)
 {
-	int coins;
-
-	coins = 0;
-	while (cents >= 25)
+	if (cents <= 0)
+		printf("0\n");
+	if (cents > 0)
 	{
-		cents = cents - 25;
-		coins++;
+		while (cents >= 25)
+		{
+			cents = cents - 25;
+			coins++;
+		}
+		while (cents >= 10)
+		{
+			cents = cents - 10;
+			coins++;
+		}
+		while (cents >= 5)
+		{
+			cents = cents - 5;
+			coins++;
+		}
+		while (cents >= 2)
+		{
+			cents = cents  - 2;
+			coins++;
+		}
+		if (cents == 1)
+		{
+			cents = cents - 1;
+			coins++;
+		}
+		printf("%d", coins);
 	}
-	while (cents >= 10)
-	{
-		cents = cents - 10;
-		coins++;
-	}
-	while (cents >= 5)
-	{
-		cents = cents - 5;
-		coins++;
-	}
-	while (cents >= 2)
-	{
-		cents = cents - 2;
-		coins++;
-	}
-	if (cents == 1)
-	{
-		cents = cents - 1;
-		coins++;
-	}
-	return (coins);
 }
