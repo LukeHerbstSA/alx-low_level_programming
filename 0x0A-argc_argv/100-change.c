@@ -71,5 +71,5 @@ void counter(int cents, int coins)
 			coins++;
 		}
 	}
-	printf("%d", coins);
+	printf("%d\n", coins);
 }
