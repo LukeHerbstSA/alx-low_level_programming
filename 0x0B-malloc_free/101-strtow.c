@@ -14,7 +14,6 @@ char **strtow(char *str)
 	int i;
 	int j;
 	int x;
-	int y;
 	int size;
 	int arsize;
 
