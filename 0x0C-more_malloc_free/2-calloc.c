@@ -18,13 +18,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	bytes = nmemb * size;
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	ptr = malloc(size);
+	ptr = malloc(bytes);
 	if (ptr != NULL)
 	{
 		for (i = 0; i < bytes; i++)
-		{
 			*((char *)(ptr) + i) = 0;
-		}
 	}
 	else
 		return (NULL);
