@@ -21,7 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	ptr = malloc(size);
 	if (ptr != NULL)
 	{
-		for (i = 0; i < size; i++)
+		for (i = 0; i < bytes; i++)
 		{
 			*((char *)ptr) = 0;
 			ptr++;
