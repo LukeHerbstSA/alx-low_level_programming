@@ -14,7 +14,9 @@ void print_all(const char * const format, ...)
 	int elements;
 
 	va_start(printer, format);
-	while (i < sizeof(format) - 1 && format != NULL)
+	if (format == NULL)
+		return;
+	while (i < sizeof(format) - 1)
 	{
 		switch (format[i])
 		{
@@ -39,7 +41,6 @@ void print_all(const char * const format, ...)
 					printf("%s", va_arg(printer, char *));
 				else
 					printf("(nil)");
-				break;
 			}
 		}
 		if (format[i] != elements - 1)
