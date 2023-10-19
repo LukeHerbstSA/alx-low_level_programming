@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
 	* print_list - num of nodes in linked list returned
@@ -12,7 +12,7 @@ size_t print_list(const list_t *h)
 	
 	for (size = 0; h != NULL; size++)
 	{
-		if (tmp->str == NULL)
+		if (h->str == NULL)
 			printf("[%d] (nil)", 0);
 		else
 			printf("[%d] %s", h->len, h->str);
