@@ -8,7 +8,7 @@ _start:
 	mov eax, 4
 	int 0x80
 
-	mov eax, 1
+	mov eax, 0
 	int 0x80
 ; Damn why name storages funky names like edx, ecx etc?
 ; why not just give user friendly names like edx = int reg?
