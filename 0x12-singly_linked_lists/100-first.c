@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
-	* printer - inline func
-	* Description: prints set string faster than main
+	* prepiled - constructor
+	* Description: auto called = faster
 	*/
-inline void printer(void)
+void __attribute__((constructor)) prepiled()
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
