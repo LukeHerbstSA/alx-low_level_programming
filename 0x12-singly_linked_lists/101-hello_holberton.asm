@@ -9,7 +9,6 @@ _start:
 	mov eax, 4
 
 	mov eax, 0
-	ret
 ; Damn why name storages funky names like edx, ecx etc?
 ; why not just give user friendly names like edx = int reg?
 ; or exc = char reg?
