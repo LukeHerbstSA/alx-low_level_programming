@@ -1,23 +1,22 @@
 #include "lists.h"
 
 /**
-	* add_nodeint - listint_t func
-	* Description: adds a new odd node with remapping
-	* @head: ptr to ptr that holds address of previous head
-	* @n: value to be store in new_head n (int val)
-	* Return: address of new element (head ptr) or NULL - fail
+	* listint_len - size_t func
+	* Description: returns num elements
+	* @h: head ptr
+	* Return: len size_t of linked lisst
 	*/
 
-listint_t *add_nodeint(listint_t **head, const int n)
+size_t listint_len(const listint_t *h)
 {
-	listint_t *new_head;
-	new_head = malloc(sizeof(struct listint_s));
-	if (new_head != NULL)
+	size_t i;
+
+	if (h != NULL)
 	{
-		new_head->n = n;
-		new_head->next = *head;
+		for (i = 0; h != NULL; i++)
+			h = h->next;
 	}
 	else
-		return (NULL);
-	return (new_head);
+		return (0);
+	return (i);
 }
