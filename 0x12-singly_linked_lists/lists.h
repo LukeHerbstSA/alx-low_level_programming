@@ -6,8 +6,8 @@
 #include <string.h>
 
 /**
-	* singly_list - list struct
-	* Description: contains str, str len and pointer to next node
+	* struct singly_list - list struct
+	* Description: contains str, len & ptr to next node
 	* @str: passed pointer to string / string
 	* @len: length of string
 	* @next: pointer to next node (NULL on end)
