@@ -11,20 +11,22 @@
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *last;
+	listint_t *tmp;
 
-	last = malloc(sizeof(struct listint_s));
+	last = malloc(sizeof(listint_t));
+	tmp = *head;
 	if (last != NULL)
 	{
-		last->n = n;
-		last->next = NULL;
-		if (*head != NULL)
+		if (tmp != NULL)
 		{
-			while ((*head)->next != NULL)
-				*head = (*head)->next;
-			(*head)->next = last;
+			while (tmp->next != NULL)
+				tmp = tmp->next;
+			tmp->next = last;
 		}
 		else
 			*head = last;
+		last->n = n;
+		last->next = NULL;
 	}
 	else
 		return (NULL);
