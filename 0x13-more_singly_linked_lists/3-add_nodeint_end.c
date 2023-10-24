@@ -30,8 +30,9 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 			}
 		}
 		else
-			tmp = last;
+			*head = last;
 		last->n = n;
+		last->next = NULL;
 	}
 	else
 		return (NULL);
