@@ -18,10 +18,11 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	tmp = *head;
 	if (last != NULL)
 	{
-		if (tmp != NULL)
+		if (*head != NULL)
 		{
 			for (i = 0; tmp != NULL; i++)
 			{
+				tmp = tmp->next;
 				if (tmp->next == NULL)
 				{
 					tmp->next = last;
