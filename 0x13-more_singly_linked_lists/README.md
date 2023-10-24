@@ -1,1 +1,1 @@
-This directory is made up of more advanced singly questions
+Based on singly linked lists
