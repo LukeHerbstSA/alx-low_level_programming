@@ -15,23 +15,23 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	listint_t *tmp;
 
 	last = malloc(sizeof(struct listint_s));
+	tmp = *head;
 	if (last != NULL)
 	{
-		last->n = n;
-		last->next = NULL;
-		tmp = *head;
-		if (*head != NULL)
+		if (tmp != NULL)
 		{
 			for (i = 0; tmp != NULL; i++)
 			{
 				if (tmp->next == NULL)
+				{
 					tmp->next = last;
 					break;
-				tmp = tmp->next;
+				}
 			}
 		}
 		else
 			tmp = last;
+		last->n = n;
 	}
 	else
 		return (NULL);
