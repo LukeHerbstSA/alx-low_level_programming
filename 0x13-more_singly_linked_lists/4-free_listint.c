@@ -1,6 +1,6 @@
 #include "lists.h"
 
-/*
+/**
 	* free_listint - void func
 	* Description: frees passed singly
 	* @head: pointer to start of singly
