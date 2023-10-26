@@ -13,17 +13,18 @@ unsigned int binary_to_uint(const char *b)
 	int i;
 
 	val = 0;
-	len = -1;
+	len = 0;
 	if (b != NULL)
 	{
 		while (b[len] != '\0')
 			len++;
+		len--;
 		for (i = 0; b[i] != '\0'; i++)
 		{
 			if (b[i] != '0' || b[i] != '1')
 				return (0);
 			if (b[i] == '1')
-				val += (int)pow(2, len);
+				val += (unsigned int)pow(2, len);
 			len--;
 		}
 	}
