@@ -21,11 +21,11 @@ void print_binary(unsigned long int n)
 			putchar('0' + ((n << i) & 1));
 			i--;
 		}
+		putchar('\n');
 	}
 	else
 	{
 		putchar('0');
 		putchar('\n');
 	}
-	putchar('\n');
 }
