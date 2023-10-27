@@ -11,14 +11,14 @@ void print_binary(unsigned long int n)
 
 	for (i = 31; i >= 0; i--)
 	{
-		if (((n << i) & 1) == 1)
+		if (((n >> i) & 1) == 1)
 			break;
 	}
 	if (i != 0)
 	{
 		while (i >= 0)
 		{
-			putchar('0' + ((n >> i) & 1));
+			putchar(48 + ((n >> i) & 1));
 			i--;
 		}
 	}
