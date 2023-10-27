@@ -4,31 +4,28 @@
 	* binary_to_uint - unsigned int func
 	* Description: turns passed binary string into number
 	* @b: binary string
-	* Return: number
+	* Return: binary string in number form
 	*/
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int val;
-	int len;
+	unsigned int value;
 	int i;
 
-	val = 0;
-	len = 0;
 	if (b != NULL)
 	{
-		while (b[len] != '\0')
-			len++;
-		len--;
 		for (i = 0; b[i] != '\0'; i++)
 		{
 			if (b[i] != '0' || b[i] != '1')
 				return (0);
+		}
+		for (i = 0; b[i] != '\0'; i++)
+		{
+			value <<= 1;
 			if (b[i] == '1')
-				val += (unsigned int)pow(2, len);
-			len--;
+				value++;
 		}
 	}
 	else
 		return (0);
-	return (val);
+	return (value);
 }
