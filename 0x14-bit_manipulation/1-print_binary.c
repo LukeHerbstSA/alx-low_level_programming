@@ -18,7 +18,7 @@ void print_binary(unsigned long int n)
 	{
 		while (i >= 0)
 		{
-			putchar('0' + ((n << i) & 1));
+			putchar('0' + ((n >> i) & 1));
 			i--;
 		}
 	}
