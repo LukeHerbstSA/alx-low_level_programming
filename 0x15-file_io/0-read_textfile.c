@@ -9,25 +9,35 @@
 	*/
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *fileptr;
+	int charsread;
+	int charsprint;
+	char *holder;
 	size_t i;
+	int stream;
 
 	i = 0;
 	if (filename != NULL)
 		return (0);
-	fileptr = fopen(filename, "r");
-	if (fileptr != NULL)
+	stream = open(filename, 0);
+	holder = malloc(sizeof(char) * letters);
+	if (stream != -1 && holder != NULL)
 	{
-		while(i < letters)
+		charsread = read(stream, holder, letters);
+		if (charsread != -1)
 		{
-			if (feof(fileptr))
-				break;
-			putchar(fgetc(fileptr));
-			i++;
+			charsprint = write(STDOUT_FILENO, holder, charsread);
+			free(holder);
+			close(stream);
+			if (charsprint != charsread)
+				return (0);
+		}
+		else
+		{
+			free (holder);
+			return (0);
 		}
 	}
 	else
 		return (0);
-	fclose(fileptr);
-	return (i);
+	return (charsprint);
 }
