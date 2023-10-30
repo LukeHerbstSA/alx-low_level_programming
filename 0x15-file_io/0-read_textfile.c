@@ -9,8 +9,8 @@
 	*/
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int charsread;
-	int charsprint;
+	size_t charsread;
+	size_t charsprint;
 	char *holder;
 	size_t i;
 	int stream;
