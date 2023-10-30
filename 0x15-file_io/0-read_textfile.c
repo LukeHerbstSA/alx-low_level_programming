@@ -18,7 +18,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fileptr = fopen(filename, "r");
 	if (fileptr != NULL)
 	{
-		while(i < letters)
+		while (i < letters)
 		{
 			if (feof(fileptr))
 				break;
