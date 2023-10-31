@@ -19,9 +19,9 @@ int main(int argc, char *argv[])
 		error_handler(-1, -1, NULL);
 	}
 	file_from = open(argv[1], O_RDONLY);
-	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (file_from == -1)
 		error_handler(0, -1, argv[1]);
+	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (file_to == -1)
 		error_handler(1, -1, argv[2]);
 	while (gen_check == 1024)
