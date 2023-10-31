@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
-	* cp - int func
+	* main - int func
 	* Description: prints content from one file to another
 	* @argc: num of args
 	* @argv: string array of args
 	* Return: exit codes 97-100 on fail or 0 (success)
 	*/
-unsigned int cp(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	char text[1024];
 	int gen_check;
