@@ -9,13 +9,11 @@
 	*/
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	size_t charsread;
-	size_t charsprint;
+	ssize_t charsread;
+	ssize_t charsprint;
 	char *holder;
-	size_t i;
 	int stream;
 
-	i = 0;
 	if (filename != NULL)
 		return (0);
 	stream = open(filename, O_RDONLY);
