@@ -23,12 +23,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (buffer != NULL)
 	{
 		readchars = read(stream, buffer, letters);
-		if (charsread != -1)
+		if (readchars != -1)
 		{
 			charsprinted = write(STDOUT_FILENO, buffer, readchars);
 			free(buffer);
 			close(stream);
-			if (charsprint != readchars)
+			if (charsprinted != readchars)
 				return (0);
 		}
 		else
