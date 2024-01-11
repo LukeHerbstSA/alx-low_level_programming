@@ -1,6 +1,13 @@
 #include "lists.h"
 
-dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
+/**
+	* add_dnodeint_end - pointer to doubly
+	* Description: adds node with val n to head of doubly
+	* @head: pointer to doubly
+	* @n: val to be stored
+	* Return: pointer
+	*/
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *tmp = *head;
 	dlistint_t newnode = malloc(sizeof(dlistint_t));
