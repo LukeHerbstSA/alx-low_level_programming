@@ -17,7 +17,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (ht == NULL || key == NULL || strcmp(key, "") == 0)
 		return (NULL);
 
-	hash = hash_djb2(key);
+	hash = hash_djb2((const unsigned char *)key);
 	index = hash % (ht->size);
 	tmp = (ht->array)[index];
 

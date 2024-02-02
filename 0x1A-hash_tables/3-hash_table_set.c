@@ -25,17 +25,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (newnode == NULL || newnode->key == NULL || newnode->value == NULL)
 		return (0);
 	tmp = ht;
-	hash = hash_djb2(key);
+	hash = hash_djb2((const unsigned char *)key);
 	index = hash % (ht->size);
 	nodeptr = (ht->array)[index];
-	newnode->next == NULL;
+	newnode->next = NULL;
 	strcpy(newnode->value, value);
 	strcpy(newnode->key, key);
 	if (nodeptr == NULL)
 		idcheck = 1;
 	while (nodeptr != NULL)
 	{
-		if (hash == hash_djb2(nodeptr->key))
+		if (hash == hash_djb2((const unsigned char *)nodeptr->key))
 		{
 			idcheck = 1;
 			break;
