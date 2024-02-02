@@ -1,5 +1,12 @@
 #include "hash_tables.h"
 
+/**
+	* hash_table_get - char ptr func
+	* Description: gets value from hash table
+	* @ht: hash table
+	* @key: string key
+	* Return: string value
+	*/
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	hash_node_t *tmp = NULL;

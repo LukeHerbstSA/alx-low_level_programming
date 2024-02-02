@@ -1,5 +1,11 @@
 #include "hash_tables.h"
 
+/**
+	* hash_djb2 - long int func
+	* Description: finds the hash value of a string
+	* @str: passed string to hash
+	* Return: hash value
+	*/
 unsigned long int hash_djb2(const unsigned char *str)
 {
 	unsigned long int hash;
