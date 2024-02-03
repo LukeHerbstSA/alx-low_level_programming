@@ -10,21 +10,19 @@
 	*/
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_table_t *tmp = ht;
 	hash_node_t *nodeptr = NULL;
 	hash_node_t *newnode = NULL;
 	unsigned long int idcheck = 0;
 	unsigned long int hash = 0;
 	int index = -1;
 
-	if (key == NULL || strcmp(key, "") == 0 || tmp == NULL)
+	if (key == NULL || strcmp(key, "") == 0 || ht == NULL)
 		return (0);
 	newnode = malloc(sizeof(hash_node_t));
 	newnode->key = malloc(strlen(key) + 1);
 	newnode->value = malloc(strlen(value) + 1);
 	if (newnode == NULL || newnode->key == NULL || newnode->value == NULL)
 		return (0);
-	tmp = ht;
 	hash = hash_djb2((const unsigned char *)key);
 	index = hash % (ht->size);
 	nodeptr = (ht->array)[index];
